@@ -6,7 +6,7 @@ PHP Cli Runtime
 [![Monthly Downloads](https://poser.pugx.org/johnitvn/cli-runtime/d/monthly)](https://packagist.org/packages/johnitvn/cli-runtime)
 [![Daily Downloads](https://poser.pugx.org/johnitvn/cli-runtime/d/daily)](https://packagist.org/packages/johnitvn/cli-runtime)
 
-A PHP library .
+PHP runtime execute command library
 
 
 Installation
