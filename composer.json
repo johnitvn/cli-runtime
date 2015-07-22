@@ -1,0 +1,22 @@
+{
+    "name": "johnitvn/cli-runtime",
+    "description": "PHP runtime execute command library",
+    "type": "library",
+    "keywords": ["cli", "runtime", "execute"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "John Martin",
+            "email": "john.itvn@gmail.com",
+            "homepage": "https://github.com/johnitvn?tab=repositories"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "johnitvn\\cliruntime\\": "src/"
+        }
+    }
+}
