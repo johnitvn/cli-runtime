@@ -14,6 +14,9 @@ class CommandFinder {
      * @return string|null Return string of real path to command or null if comand not installed or not register in system enviroment
      */
     public static function findCommand($command) {
+        if (static::isWindownsOS()) {
+            $command = $command . '.bat';
+        }
         $realCommand = null;
         $envPaths = explode(PATH_SEPARATOR, getenv('path'));
         foreach ($envPaths as $path) {
@@ -24,6 +27,10 @@ class CommandFinder {
             }
         }
         return $realCommand;
+    }
+
+    private static function isWindownsOS() {
+        return strtoupper(substr(PHP_OS, 0, 3)) === 'WIN';
     }
 
 }
