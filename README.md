@@ -85,12 +85,12 @@ echo Hello world
 You can see below code snippet for understand how to use CommandBuilder class
 
 ````php
-$command = new CommandBuidler('phpunit');
-$command->addFlag('v')
+$builder = new CommandBuidler('phpunit');
+$builder->addFlag('v')
     ->addArgument('stop-on-failure')
     ->addArgument('configuration', 'phpunit.xml')
     ->addParam('TestCase.php');
-echo $command->getCommand();
+echo $builder->getCommand();
 ````
 
 And the result is:
@@ -98,5 +98,15 @@ And the result is:
 ````php
 phpunit TestCase.php -v --stop-on-failure --configuration=phpunit.xml
 ````
+
+6. CommandFinder (since version 1.0.2)
+You can use `johnitvn\cliruntime\CommandFinder` as utility for finder real path of command under system environment variable
+````
+use johnitvn\cliruntime\CommandFinder;
+$realCommand = CommandFinder::findCommand('composer');
+echo $realCommand;
+````
+
+And result look like: `C:\\xampp\php\composer`
 
 You can see the class comment for more detail about usage

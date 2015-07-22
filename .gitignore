@@ -2,6 +2,7 @@ nbproject
 vendor
 composer.phar
 composer.lock
+test.php
 
 # Windows image file caches
 Thumbs.db
