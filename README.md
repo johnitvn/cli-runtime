@@ -35,23 +35,21 @@ Usage
 1. Create processor
 
 ````php
-use johnitvn\cliruntime\CliRuntimeProcess;
-
 $workingdir = 'path/to/working_dir';
-$process = new CliRuntimeProcess($workingdir);
+$process = new johnitvn\cliruntime\CliRuntimeProcess($workingdir);
 ````
 
 If you set working dir is null in CliRuntimeProcess constructor current working dir will be path of file call CliRuntimeProcess
 
 2. Run command without return and display ouput
 
-````
+````php
 $process->run('echo Hello');
 ````
 
 3. Run command with capture output
 
-````
+````php
 $output = array();
 $process->runCapture('echo Hello',$output);
 var_dump($output);
@@ -61,7 +59,7 @@ As example reference variable $ouput will get command output lines as array
 
 4. Run command with display out put
 
-````
+````php
 $process->runDisplayOutput('echo Hello');
 ````
 
@@ -73,7 +71,7 @@ You can use `johnitvn\cliruntime\CommandBuidler` as utility for create command
 Below is simple example with CommandBuilder:
 
 ````php
-$command = new CommandBuidler('echo');
+$command = new johnitvn\cliruntime\CommandBuidler('echo');
 $command->addParam('Hello world');
 echo $command->getCommand();
 ```` 
@@ -86,8 +84,8 @@ echo Hello world
 
 You can see below code snippet for understand how to use CommandBuilder class
 
-````
-$command = new CommandBuidler('echo');
+````php
+$command = new CommandBuidler('phpunit');
 $command->addFlag('v')
     ->addArgument('stop-on-failure')
     ->addArgument('configuration', 'phpunit.xml')
@@ -97,8 +95,8 @@ echo $command->getCommand();
 
 And the result is:
 
-````
-echo TestCase.php -v --stop-on-failure --configuration=phpunit.xml
+````php
+phpunit TestCase.php -v --stop-on-failure --configuration=phpunit.xml
 ````
 
 You can see the class comment for more detail about usage
