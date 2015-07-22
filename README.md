@@ -1,10 +1,10 @@
 Json Query
 =============
-[![Latest Stable Version](https://poser.pugx.org/johnitvn/cli-rumtime/v/stable)](https://packagist.org/packages/johnitvn/cli-rumtime)
-[![License](https://poser.pugx.org/johnitvn/cli-rumtime/license)](https://packagist.org/packages/johnitvn/cli-rumtime)
-[![Total Downloads](https://poser.pugx.org/johnitvn/cli-rumtime/downloads)](https://packagist.org/packages/johnitvn/cli-rumtime)
-[![Monthly Downloads](https://poser.pugx.org/johnitvn/cli-rumtime/d/monthly)](https://packagist.org/packages/johnitvn/cli-rumtime)
-[![Daily Downloads](https://poser.pugx.org/johnitvn/cli-rumtime/d/daily)](https://packagist.org/packages/johnitvn/cli-rumtime)
+[![Latest Stable Version](https://poser.pugx.org/johnitvn/cli-runtime/v/stable)](https://packagist.org/packages/johnitvn/cli-runtime)
+[![License](https://poser.pugx.org/johnitvn/cli-runtime/license)](https://packagist.org/packages/johnitvn/cli-runtime)
+[![Total Downloads](https://poser.pugx.org/johnitvn/cli-runtime/downloads)](https://packagist.org/packages/johnitvn/cli-runtime)
+[![Monthly Downloads](https://poser.pugx.org/johnitvn/cli-runtime/d/monthly)](https://packagist.org/packages/johnitvn/cli-runtime)
+[![Daily Downloads](https://poser.pugx.org/johnitvn/cli-runtime/d/daily)](https://packagist.org/packages/johnitvn/cli-runtime)
 
 A PHP library .
 
@@ -17,13 +17,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist johnitvn/cli-rumtime "*"
+php composer.phar require --prefer-dist johnitvn/cli-runtime "*"
 ```
 
 or add
 
 ```
-"johnitvn/cli-rumtime": "*"
+"johnitvn/cli-runtime": "*"
 ```
 
 to the require section of your `composer.json` file.
