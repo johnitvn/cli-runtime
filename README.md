@@ -1,4 +1,4 @@
-Json Query
+PHP Cli Runtime
 =============
 [![Latest Stable Version](https://poser.pugx.org/johnitvn/cli-runtime/v/stable)](https://packagist.org/packages/johnitvn/cli-runtime)
 [![License](https://poser.pugx.org/johnitvn/cli-runtime/license)](https://packagist.org/packages/johnitvn/cli-runtime)
